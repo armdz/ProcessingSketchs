@@ -156,7 +156,10 @@ void saveTheFrame()
 
   String path = sketchPath();
   File f = new File(path+"/render");
-  
-  int ind = f.list().length;
+  int ind = 0;
+  if (f.list() != null) {
+    ind = f.list().length;
+  }
+
   saveFrame("render/out"+Integer.toString(ind)+".png");
 }
