@@ -153,12 +153,14 @@ void  draw()
     float hei = side*.5;
     for (int i=0; i<it; i++)
     {
-      float fil = noise(i,frameCount);
+      float fil = noise(i, frameCount);
+      fill(100, 100*fil);
       if (i == 0) {
         rect(side*i, -hei*2, side, side*.5, round, 0, 0, 0);
       } else if (i == it-1)
       {
         rect(side*i, -hei*2, side, side*.5, 0, 0, round, 0);
+        ellipse(side*i+side*1.5, -hei*1.5, side*.25, side*.25);
       } else {
         rect(side*i, -hei*2, side, side*.5);
       }
@@ -179,7 +181,10 @@ void  draw()
 
     blendMode(NORMAL);
 
+    noi(30);
 
+
+    saveTheFrame();
 
     gen = false;
   }
@@ -265,6 +270,37 @@ int  getNearest(int _cur, PVector[] st)
   ret = curShort;
 
   return ret;
+}
+
+void noi(float _alpha)
+{
+  PImage img = createImage(width, height, ARGB);
+  img.loadPixels();
+  float step = 1;
+  for (int x=0; x<width; x+=step)
+  {
+    for (int y=0; y<height; y+=step)
+    {
+      float noi = noise(x, y, frameCount);
+
+      img.set(x, y, color(0, noi*_alpha));
+    }
+  }
+  img.updatePixels();
+  image(img, 0, 0);
+}
+
+void saveTheFrame()
+{
+
+  String path = sketchPath();
+  File f = new File(path+"/render");
+  int ind = 0;
+  if (f.list() != null) {
+    ind = f.list().length;
+  }
+
+  saveFrame("render/out"+Integer.toString(ind)+".png");
 }
 
 void  keyPressed()
