@@ -7,8 +7,8 @@ boolean[]  takedPoints;
 
 void  setup()
 {
-  size(600, 600);
-  pixelDensity(2);
+  size(1080, 1920);
+  //pixelDensity(2);
   gen = true;
 }
 
@@ -71,7 +71,7 @@ void  draw()
     {
       takedPoints[p] = false;
       points[p] = new Sat();
-      points[p].rad = random(12, 50);  //  rad
+      points[p].rad = random(40, 80);  //  rad
       if (hasSun == -1 && (random(100) > 70 || p == points.length-1)) {
         hasSun = p;
         points[p].sun = true;
@@ -111,7 +111,7 @@ void  draw()
     Sat sat = points[hasSun];
     strokeWeight(1);
     int seg = 100;
-    float e_rad =width*1.2;
+    float e_rad =height*2;
     for (int i=0; i<seg; i++)
     {
       float delta = i/(float)seg;
