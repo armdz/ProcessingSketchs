@@ -5,18 +5,34 @@ PImage root;
 PShader shader;
 void  setup()
 {
-  size(600, 600, P3D);
+  size(600, 600);
   pixelDensity(2);
 }
 
 
 void  draw()
 {
-  shader =loadShader("frag.glsl", "vert.glsl");
   if (gen)
   {
     background(255);
-    shader(shader);
+    hint(DISABLE_DEPTH_TEST);
+
+    float step = 20;
+    for (int x=0; x<width; x+=step)
+    {
+      for (int y=0; y<height; y+=step)
+      {
+        stroke(240);
+        noFill();
+        rect(x, y, step, step);
+        if(random(100) > 90)
+        {
+          stroke(200);
+         ellipse(x,y,step*.5,step*.5); 
+        }
+      }
+    }
+
 
     pushMatrix();
     translate(width*.5, height*.5);
@@ -27,11 +43,10 @@ void  draw()
     translate(-w*.5, -h*.5);
 
     Rectangle rec = new Rectangle(0, 0, w, h);
-    divide(8, rec);
+    divide(7, rec);
 
 
     popMatrix();
-    resetShader();
 
     PImage g = get();
     g.filter(BLUR, 3);
@@ -72,13 +87,13 @@ void drawRect(Rectangle _rec, boolean _left)
 
     beginShape();
     noStroke();
-    fill(rr);
+    fill(rr,200);
     vertex(0, 0);
-    fill(rr*2);
+    fill(rr*2,200);
     vertex(w, 0);
 
     vertex(w, h);
-    fill(rr);
+    fill(rr,200);
     vertex(0, h);
     vertex(0, 0);
 
