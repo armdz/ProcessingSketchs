@@ -24,6 +24,15 @@ If your not using OSX, remove pixelDensity(2) from the setup()*
 <a href="https://github.com/armdz/ProcessingSketchs/tree/master/Cuadrito"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Cuadrito/image.png" width="100" height="100"></a>
 <a href="https://github.com/armdz/ProcessingSketchs/tree/master/Cora"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Cora/image.png" width="100" height="100"></a>
 <a href="https://github.com/armdz/ProcessingSketchs/tree/master/AxiTentaculos"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/AxiTentaculos/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/recCircle"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/recCircle/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Pesos"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Pesos/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Pack"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Pack/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Pack2"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Pack2/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Bosque"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Bosque/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Bosque2"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Bosque2/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Cell"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Cell/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Estaca"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Estaca/image.png" width="100" height="100"></a>
+<a href="https://github.com/armdz/ProcessingSketchs/tree/master/Flores"><img src="https://github.com/armdz/ProcessingSketchs/raw/master/Flores/image.png" width="100" height="100"></a>
 ***
 
 http://armdz.com
