@@ -3,9 +3,13 @@
 The code its a little bit dirty !
 But its mostly simple code.
 
-##### Notes:
+##### Notes
 
-If your not using OSX, remove pixelDensity(2) from the setup()*
++ If your not using OSX, remove pixelDensity(2) from the setup()
+
++ Almost all sketches, generate new image pressing "g".
+
++ Some of the sketches are using a PShader for a Perlin Noise deformation in the image, in some cases the sketch not generate any result in the first run, you can press "g" for that.
 
 ##### Index
 
