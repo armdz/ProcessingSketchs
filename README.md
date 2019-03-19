@@ -9,9 +9,10 @@ If your not using OSX, remove pixelDensity(2) from the setup()*
 
 ##### Index
 
-![](./pic/https://github.com/armdz/ProcessingSketchs/raw/master/triangulos/image.png=50x50)
+<img src="https://github.com/armdz/ProcessingSketchs/raw/master/triangulos/image.png" width="200" height="200">
 
 
 ***
 
 http://armdz.com
+
